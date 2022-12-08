@@ -1,4 +1,5 @@
 import React from 'react';
+import s from './SuperButton.module.css'
 
 export type SuperButtonPops = {
   name: string
@@ -12,7 +13,7 @@ export const SuperButton = (props: SuperButtonPops) => {
     callback()
   }
   return (
-    <button onClick={buttonClickHandler} disabled={disabled}>{name}</button>
+    <button className={s.button} onClick={buttonClickHandler} disabled={disabled}>{name}</button>
   );
 };
 
