@@ -1,46 +1,19 @@
-# Getting Started with Create React App
+Создание продвинутого счётчика. Настраиваемый счётчик  
+Condition:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://user-images.githubusercontent.com/104061104/206427937-1c62c3d5-d382-427c-aba8-8e347f4ab7f4.png)
 
-## Available Scripts
+Правая часть счётчика работает так же как и в его первой версии. Появляется новый блок с настройками счётчика.  При помощи нового блока можно задать стартовое значение счётчика и максимальное значение счётчика. Кнопка Set этого блока сохраняет стартовые настройки счётчика В окнах введения нового значения нужно организовать ограничение введения недопустимого значения. Например:при введении стартового значения менее 0, кнопка Set дизейблится, поле введения краснеет, в дисплей счётчика выводиться сообщение об ошибке. Кнопки счётчика так же дизейбляться
 
-In the project directory, you can run:
+![image](https://user-images.githubusercontent.com/104061104/206433390-f3496327-d182-4fd7-9188-577671b87795.png)
 
-### `yarn start`
+При введении допустимого значение, кнопки раздиейбливаются и в дисплей счётчика выводиться сообщение для пользователя.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![image](https://user-images.githubusercontent.com/104061104/206433755-2b8be024-aff4-47c3-b525-24c19e983484.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+При введении максимального значения равного стартовому дизйбляться все кнопки. Подсвечиваются красным все поля ввода значения. В дисплей счётчика выводиться сообщение об ошибке.
 
-### `yarn test`
+![image](https://user-images.githubusercontent.com/104061104/206434115-760d559e-594c-477d-81d4-dd187e575f2f.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Изменённые стартовые настройки должны сохраняться в local storage. То есть при перезагрузке страницы, введёные значения должны сохраняться.  
+Разбить всё на отдельные компоненты. Кнопки - одна переиспоьзуемая компонента.
