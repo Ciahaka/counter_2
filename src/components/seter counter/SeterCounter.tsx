@@ -10,8 +10,8 @@ export const SeterCounter = (props:SeterPropsType) => {
   return (
     <div className={s.count}>
       <div className={`${s.number} ${s.input}`}>
-        <input type={'number'}/>
-        <input type={'number'}/>
+        Max Value<input  type={'number'}/>
+        Start Value<input  type={'number'}/>
       </div>
 
       <div className={s.buttons}>

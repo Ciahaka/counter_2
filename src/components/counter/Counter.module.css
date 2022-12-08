@@ -25,7 +25,11 @@
 }
 .input{
     flex-direction: column;
-
+    justify-content:center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #edeffa;
+    text-shadow: #383838 1px 1px;
 }
 
 .numberRed {
